@@ -76,7 +76,7 @@ def home(request):
         'students_count': students_count,
         'groups_count': groups_count,
     }
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
 
 # -------------------------
@@ -359,3 +359,4 @@ def delete_student(request, id):
 
     # GET so‘rov bo‘lsa tasdiqlash sahifasini ko‘rsatish
     return render(request, 'confirm_delete.html', {'student': student})
+
